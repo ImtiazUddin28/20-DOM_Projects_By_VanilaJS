@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  
+</head>
+<body>
+    <header>
+        <h1 class="text-4xl font-medium text-center mt-6">Welcome To The <span class="text-lime-500 font-semibold">Eastern Bank Limited</span></h1>
+    </header>
+    <main>
+        <div class="bg-red-200 w-3/4 mx-auto py-7 mt-8 rounded-xl">
+            <h1 class="text-2xl font-medium text-center text-slate-900">Please Login</h1>
+            <input class="block p-2 w-3/4 my-4 mx-auto" type="email" name="" id="userEmail" placeholder="Enter Your Email Address">
+            <input class="block p-2 w-3/4 my-4 mx-auto" type="password" name="" id="userPassword" placeholder="Enter your password">
+            <button id="buttonSubmit" class="bg-amber-600 w-1/4 block font-medium mx-auto p-3 text-white rounded-lg">SUBMIT</button>
+        </div>
+    </main>
+    <script src="./js/login.js"></script>
+</body>
+</html>
